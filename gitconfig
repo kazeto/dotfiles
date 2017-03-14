@@ -1,0 +1,5 @@
+[user]
+	email = kazeto0513@gmail.com
+	name = Kazeto Yamamoto
+[core]
+	editor = emacs -nw
