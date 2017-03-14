@@ -7,4 +7,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+export PS1="\[\e[0;36m\]\$(date +'[%m/%d %H:%M]') \[\e[0;35m\]\u@\h \[\e[0;33m\]\W \[\e[0;31m\]\$\[\e[00m\] "
+
 source ~/.conf.d/local-env.sh
