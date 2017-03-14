@@ -1,4 +1,5 @@
-alias la='ls -a --color=auto'
-alias ll='ls -lha --color=auto'
+alias ls='ls --color=auto --ignore={NTUSER*,ntuser*}'
+alias la='ls -a'
+alias ll='ls -lha'
 alias grep='grep --color'
 alias df='df -h'

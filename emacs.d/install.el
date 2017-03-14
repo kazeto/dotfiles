@@ -5,8 +5,7 @@
 (setq load-path
       (append '("~/.emacs.d/conf") load-path))
 
-(if (file-exists-p "init-proxy.el")
-    (load "init-proxy.el"))
+(load "init-proxy.el" t)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
@@ -16,6 +15,7 @@
 
 (defvar my/favorite-packages
   '(
+    init-loader ;;; init
     auto-complete fuzzy ;;; auto-complete
     sr-speedbar ;;;; speedbar
     python-mode ;;;; python
