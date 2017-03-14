@@ -13,6 +13,7 @@ os_detect() {
 	*'linux'*)  PLATFORM='linux'   ;;
 	*'darwin'*) PLATFORM='osx'     ;;
 	*'bsd'*)    PLATFORM='bsd'     ;;
+	*'cygwin'*) PLATFORM='cygwin'  ;;
 	*)          PLATFORM='unknown' ;;
     esac
     export PLATFORM
@@ -22,6 +23,16 @@ os_detect() {
 is_osx() {
     os_detect
     if [ "$PLATFORM" = "osx" ]; then
+	return 0
+    else
+	return 1
+    fi
+}
+
+# is_osx returns true if running OS is Macintosh
+is_cygwin() {
+    os_detect
+    if [ "$PLATFORM" = "cygwin" ]; then
 	return 0
     else
 	return 1

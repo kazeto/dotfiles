@@ -25,3 +25,10 @@ do
     echo "ln -s ${DIR}/${file} ${HOME}/.${file}"
     ln -s ${DIR}/${file} ${HOME}/.${file}
 done
+
+source ./conf.d/os_detect.sh
+
+# Install solarized
+if is_cygwin; then
+    git clone https://github.com/mavnn/mintty-colors-solarized ./conf.d/solarized
+fi
