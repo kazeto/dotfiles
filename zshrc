@@ -67,5 +67,5 @@ SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 
 # -------- Common --------
 
-source ~/dotfiles/alias.sh
-source ~/dotfiles/local-env.sh
+source ~/.conf.d/alias.sh
+source ~/.conf.d/local-env.sh

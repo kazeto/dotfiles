@@ -3,7 +3,7 @@
 cd `dirname $0`
 
 DIR=`pwd`
-DOT_FILES=(bash_profile bashrc zshrc wgetrc emacs.d tmux.conf gitconfig)
+DOT_FILES=(bash_profile bashrc zshrc wgetrc emacs.d conf.d tmux.conf gitconfig)
 
 for file in ${DOT_FILES[@]}
 do
