@@ -33,8 +33,3 @@
 ;;; -------- don't make backup files --------
 (setq-default make-backup-files nil)
 
-;;; -------- Auto mode --------
-(add-to-list 'auto-mode-alist '("\\.py$" . python-mode))
-(add-to-list 'auto-mode-alist '("\\.hpp$" . c++-mode))
-(add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))
-(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))

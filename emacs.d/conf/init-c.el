@@ -16,3 +16,6 @@
 	  '(lambda ()
 	     (my-c-setting)
 	     (c-set-offset 'innamespace 0)))
+
+(add-to-list 'auto-mode-alist '("\\.hpp$" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))
