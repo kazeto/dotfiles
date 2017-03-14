@@ -4,7 +4,9 @@
 
 (setq load-path
       (append '("~/.emacs.d/conf") load-path))
-(load "init-proxy.el")
+
+(if (file-exists-p "init-proxy.el")
+    (load "init-proxy.el"))
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
