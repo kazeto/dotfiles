@@ -3,8 +3,7 @@
 cd `dirname $0`
 
 DIR=`pwd`
-DOTFILES=(bash_profile bashrc zshrc emacs.d conf.d tmux.conf gitconfig)
-DOTFILES_OPTIONAL=(wgetrc)
+DOTFILES=(bash_profile bashrc zshrc emacs.d tmux.conf gitconfig)
 
 for file in ${DOTFILES[@]}
 do
@@ -16,19 +15,6 @@ do
     ln -s ${DIR}/${file} ${HOME}/.${file}
 done
 
-for file in ${DOTFILES_OPTIONAL[@]}
-do
-    if [ -f ${HOME}/.${file} ]; then
-	mv ${HOME}/.${file} ${HOME}/.${file}~
-    fi
+echo "export DOTFILES_HOME=$DIR" > ~/.dotfiles_profile
 
-    echo "ln -s ${DIR}/${file} ${HOME}/.${file}"
-    ln -s ${DIR}/${file} ${HOME}/.${file}
-done
-
-source ./conf.d/os_detect.sh
-
-# Install solarized
-if is_cygwin; then
-    git clone https://github.com/mavnn/mintty-colors-solarized ./conf.d/solarized
-fi
+sh scripts/make-fzy.sh

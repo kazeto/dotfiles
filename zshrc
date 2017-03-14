@@ -1,5 +1,6 @@
 # -*- mode: Shell-script -*-
 
+
 # -------- Complement --------
 
 autoload -U compinit; compinit                      # 補完機能を有効にする
@@ -67,5 +68,5 @@ SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 
 # -------- Common --------
 
-source ~/.conf.d/alias.sh
-source ~/.conf.d/local-env.sh
+source ~/.dotfiles_profile
+source $DOTFILES_HOME/scripts/rc.sh

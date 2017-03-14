@@ -1,0 +1,9 @@
+[submodule "mods/enhancd"]
+	path = mods/enhancd
+	url = https://github.com/b4b4r07/enhancd
+[submodule "mods/mintty-colors-solarized"]
+	path = mods/mintty-colors-solarized
+	url = https://github.com/mavnn/mintty-colors-solarized
+[submodule "mods/fzy"]
+	path = mods/fzy
+	url = http://github.com/jhawthorn/fzy.git
