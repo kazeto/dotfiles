@@ -1,5 +1,6 @@
 # -*- mode: Shell-script -*-
 
+setopt nonomatch
 
 # -------- Complement --------
 
@@ -47,7 +48,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 autoload -U colors; colors
 
 # When you are general user
-tmp_prompt="%{${fg[cyan]}%}[%n@%m %~]$ %{${reset_color}%}"
+tmp_prompt="%{${fg[cyan]}%}[%n@%m %c]%{${fg[red]}%}$ %{${reset_color}%}"
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%D %*]%{${reset_color}%}"
 tmp_sprompt="%{${fg[yellow]}%}%r is correct? [Yes, No, Abort, Edit]:%{${reset_color}%}"
