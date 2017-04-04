@@ -16,7 +16,8 @@
 (load "init-speedbar.el" t)
 (load "init-auto-complete.el" t)
 
-(load "init-tuffy.el" t)
+(load "init-org.el")
 (load "init-c.el" t)
 (load "init-py.el" t)
+(load "init-tuffy.el" t)
 (load "init-yatex.el" t)
