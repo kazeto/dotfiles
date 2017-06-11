@@ -10,6 +10,10 @@
 (line-number-mode 1)
 (column-number-mode 1)
 
+(global-hl-line-mode t)
+(show-paren-mode t)
+(setq show-paren-style 'mixed)
+
 (setq frame-title-format (format "Emacs - %%f" (system-name)))
 
 (setq tab-width 4)
