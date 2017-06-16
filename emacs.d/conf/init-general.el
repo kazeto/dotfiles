@@ -14,6 +14,10 @@
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 
+(custom-set-variables)
+(custom-set-faces
+ '(highlight ((t (:background "black")))))
+
 (setq frame-title-format (format "Emacs - %%f" (system-name)))
 
 (setq tab-width 4)
