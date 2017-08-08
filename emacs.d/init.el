@@ -19,6 +19,7 @@
 (load "init-org.el")
 (load "init-c.el" t)
 (load "init-py.el" t)
+(load "init-tsv.el" t)
 (load "init-tuffy.el" t)
 (load "init-david.el" t)
 (load "init-yatex.el" t)
