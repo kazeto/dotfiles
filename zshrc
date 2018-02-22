@@ -33,16 +33,6 @@ bindkey "^N" history-beginning-search-forward-end
 function history-all { history -E 1 } # すべてのヒストリを表示する
 
 
-# -------- Color ls --------
-
-export LSCOLORS=Exfxcxdxbxegedabagacad
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-export ZLS_COLORS=$LS_COLORS
-export CLICOLOR=true
-
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
-
-
 # -------- Color prompt --------
 
 autoload -U colors; colors
@@ -65,6 +55,16 @@ PROMPT=$tmp_prompt    # 通常のプロンプト
 PROMPT2=$tmp_prompt2  # セカンダリのプロンプト(コマンドが2行以上の時に表示される)
 RPROMPT=$tmp_rprompt  # 右側のプロンプト
 SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
+
+
+# -------- Color ls --------
+
+export LSCOLORS=Exfxcxdxbxegedabagacad
+export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+export ZLS_COLORS=$LS_COLORS
+export CLICOLOR=true
+
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 
 # -------- Common --------
