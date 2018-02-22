@@ -10,8 +10,8 @@
 	  (" => "  . font-lock-keyword-face)
 	  ("\\<not\\>" . font-lock-warning-face)
 	  ("!"         . font-lock-warning-face)
-	  ("^\\(problem\\|rule\\|property\\)\\s-*{" 1 font-lock-type-face)
-	  ("^\\(problem\\|rule\\|property\\)\\s-+\\([^ \t\n{]+\\)\\s-*{"
+	  ("^\\(problem\\|rule\\|property\\|mutual-exclusion\\)\\s-*{" 1 font-lock-type-face)
+	  ("^\\(problem\\|rule\\|property\\|mutual-exclusion\\)\\s-+\\([^ \t\n{]+\\)\\s-*{"
 	   (1 font-lock-type-face)
 	   (2 font-lock-function-name-face))
 	  ("\\<\\(observe\\|require\\|choice\\)\\s-*{" 1 font-lock-constant-face)
