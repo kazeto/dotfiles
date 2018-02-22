@@ -8,6 +8,7 @@
 	  ("\\(\"[^\"]*\"\\)\\s-*[,(){}]" 1 font-lock-string-face)
 	  (" \\^ " . font-lock-keyword-face)
 	  (" => "  . font-lock-keyword-face)
+	  ("[(,]\\s-*\\(\\*\\)[a-z]" 1 font-lock-warning-face)
 	  ("\\<not\\>" . font-lock-warning-face)
 	  ("!"         . font-lock-warning-face)
 	  ("^\\(problem\\|rule\\|property\\|mutual-exclusion\\)\\s-*{" 1 font-lock-type-face)
@@ -15,7 +16,7 @@
 	   (1 font-lock-type-face)
 	   (2 font-lock-function-name-face))
 	  ("\\<\\(observe\\|require\\|choice\\)\\s-*{" 1 font-lock-constant-face)
-	  ("\\<\\(transitive\\|asymmetric\\|symmetric\\|right-unique\\|left-unique\\|closed\\|abstract\\):"
+	  ("\\<\\(transitive\\|asymmetric\\|symmetric\\|irreflexive\\|right-unique\\|left-unique\\|closed\\|abstract\\):"
 	   (1 font-lock-constant-face))
 	  (":[^ \t\n(){}]+" . font-lock-doc-face)))
   (setq font-lock-defaults
