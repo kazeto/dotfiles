@@ -6,7 +6,7 @@
 		("\\.sty$" . yatex-mode)
 		("\\.clo$" . yatex-mode)
 		("\\.bbl$" . yatex-mode)) auto-mode-alist))
-(setq YaTeX-inhibit-prefix-letter t)
+(setq YaTeX-inhibit-prefix-letter nil)
 (setq YaTeX-kanji-code 4) ;; UTF-8
 
 (setq tex-command "platex -kanji=utf8")
