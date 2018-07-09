@@ -23,3 +23,4 @@
 (load "init-tuffy.el" t)
 (load "init-david.el" t)
 (load "init-yatex.el" t)
+(load "init-aspell.el" t)
