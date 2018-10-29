@@ -6,13 +6,18 @@
       (append '("~/.emacs.d/conf") load-path))
 
 (load "init-proxy.el" t)
-(load "init-package.el" t)
 
+
+;; ---- Package
+
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
 (package-refresh-contents)
+
 
 (defvar my/favorite-packages
   '(
-    init-loader ;;; init
     auto-complete fuzzy ;;; auto-complete
     sr-speedbar   ;;; speedbar
     python-mode   ;;; python
@@ -20,6 +25,7 @@
     yatex         ;;; yatex-mode
     ))
 
+; Install packages
 (dolist (package my/favorite-packages)
   (unless (package-installed-p package)
     (package-install package)))
