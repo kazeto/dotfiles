@@ -80,3 +80,15 @@
 ; 曖昧マッチを使用
 (setq ac-use-fuzzy t)
 
+
+;;; -------- Aspell --------
+
+(setq-default ispell-program-name "aspell")
+
+; 日本語を無視する
+(eval-after-load "ispell"
+  '(add-to-list 'ispell-skip-region-alist '("[^\000-\377]+")))
+
+; Ctrl-Alt-$ で英単語チェックを実行
+(global-set-key (kbd "C-M-$") 'ispell-complete-word)
+
