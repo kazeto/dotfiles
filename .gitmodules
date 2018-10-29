@@ -7,3 +7,6 @@
 [submodule "mods/fzy"]
 	path = mods/fzy
 	url = http://github.com/jhawthorn/fzy.git
+[submodule "mods/Parsrs"]
+	path = mods/Parsrs
+	url = https://github.com/ShellShoccar-jpn/Parsrs
