@@ -1,11 +1,21 @@
-#! /usr/bin
+# -*- mode: Shell-script -*-
+
 
 ## Common setting among bash and zsh
-
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}\007"'
 
 source $DOTFILES_HOME/scripts/alias.sh
 source $DOTFILES_HOME/scripts/os_detect.sh
 source $DOTFILES_HOME/mods/enhancd/init.sh
-source $DOTFILES_HOME/scripts/local_conf.sh
+
+
+## Source local configuration
+if [ -f /data/kazeto/env.sh ]; then
+	source /data/kazeto/env.sh
+fi
+
+if [ -f ~/.local/env.sh ]; then
+	source ~/.local/env.sh
+fi
+
