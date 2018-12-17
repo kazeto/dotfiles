@@ -15,7 +15,7 @@
 	  ("^\\(problem\\|rule\\|property\\|mutual-exclusion\\)\\s-+\\([^ \t\n{]+\\)\\s-*{"
 	   (1 font-lock-type-face)
 	   (2 font-lock-function-name-face))
-	  ("\\<\\(observe\\|require\\|choice\\)\\s-*{" 1 font-lock-constant-face)
+	  ("\\<\\(observe\\|query\\|fact\\|require\\)\\s-*{" 1 font-lock-constant-face)
 	  ("\\<\\(transitive\\|asymmetric\\|symmetric\\|irreflexive\\|right-unique\\|left-unique\\|closed\\|abstract\\):"
 	   (1 font-lock-constant-face))
 	  (":[^ \t\n(){}]+" . font-lock-doc-face)))
