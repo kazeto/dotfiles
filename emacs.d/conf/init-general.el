@@ -23,6 +23,7 @@
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 
+; 背景色を黒色に
 (custom-set-variables)
 (custom-set-faces
  '(highlight ((t (:background "black")))))
