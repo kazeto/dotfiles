@@ -1,3 +1,14 @@
+;;; -------- Org Mode --------
+
+(require 'org-install)
+
+(setq org-todo-keywords
+      '((sequence "SOMEDAY(s)" "WAIT(w)" "TODO(t)" "|" "DONE(d)")))
+(setq org-log-done 'time)
+
+(add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
+
+
 ;;; -------- C mode --------
 
 (defun my-c-setting ()
@@ -17,5 +28,17 @@
 	     (my-c-setting)
 	     (c-set-offset 'innamespace 0)))
 
+(add-to-list 'auto-mode-alist '("\\.cc$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.hpp$" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.h$" . c++-mode))
+
+
+;;; -------- Python Mode --------
+
+(defun my-py-setting ()
+  "Setting of python-mode"
+  (interactive)
+  (local-set-key "\C-m" 'py-newline-and-indent)
+  (local-set-key "\C-h" 'py-electric-backspace))
+
+(add-hook 'python-mode-hook 'my-py-setting)

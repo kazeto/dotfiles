@@ -22,4 +22,7 @@ done
 
 echo "export DOTFILES_HOME=$DIR" > ~/.dotfiles_profile
 
+mkdir -p ~/.local/bin
+ln -s ${DIR}/mods/Parsrs/parsrj.sh ~/.local/bin/parsrj
+
 sh scripts/make-fzy.sh

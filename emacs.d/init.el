@@ -2,16 +2,20 @@
       (append '("~/.emacs.d/conf") load-path))
 
 (load "init-proxy.el" t)
-(load "init-package.el" t)
+
+
+; ---- Package ----
+
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
+
+
+; ---- Loading ----
+
 (load "init-general.el" t)
+(load "init-modes.el" t)
 
-(load "init-template.el" t)
-(load "init-speedbar.el" t)
-(load "init-auto-complete.el" t)
-
-(load "init-org.el")
-(load "init-c.el" t)
-(load "init-py.el" t)
 (load "init-tsv.el" t)
 (load "init-tuffy.el" t)
 (load "init-david.el" t)
