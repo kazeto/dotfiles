@@ -1,4 +1,5 @@
 #! /bin/sh
+# -*- coding: utf-8 -*-
 
 cd $DOTFILES_HOME/mods
 

@@ -14,7 +14,7 @@
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 
-(custom-set-variables)
+(setq custom-file (locate-user-emacs-file "init-general.el"))
 (custom-set-faces
  '(highlight ((t (:background "black")))))
 

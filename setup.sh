@@ -1,4 +1,5 @@
 #! /usr/bin/bash
+# -*- coding: utf-8 -*-
 
 cd `dirname $0`
 DIR=`pwd`
