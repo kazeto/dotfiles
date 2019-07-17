@@ -2,7 +2,7 @@
 
 
 ## Common setting among bash and zsh
-export PATH=$PATH:$HOME/bin:$HOME/.local/bin
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}\007"'
 
 source $DOTFILES_HOME/scripts/alias.sh
