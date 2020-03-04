@@ -71,3 +71,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
 source ~/.dotfiles_profile
 source $DOTFILES_HOME/scripts/rc.sh
+
+if is_cygwin; then
+    source $DOTFILES_HOME/mods/mintty-colors-solarized/sol.dark
+fi
