@@ -9,6 +9,7 @@ source $DOTFILES_HOME/scripts/alias.sh
 source $DOTFILES_HOME/scripts/os_detect.sh
 source $DOTFILES_HOME/mods/enhancd/init.sh
 
+export LSCOLORS=gxfxcxdxbxegedabagacad
 
 ## Source local configuration
 if [ -f /data/kazeto/env.sh ]; then

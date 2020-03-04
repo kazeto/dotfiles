@@ -1,4 +1,4 @@
-alias ls='ls --color=auto --ignore={NTUSER*,ntuser*}'
+alias ls='ls -G --color=auto --ignore={NTUSER*,ntuser*}'
 alias la='ls -a'
 alias ll='ls -lha'
 alias grep='grep --color'
