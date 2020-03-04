@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: gcd
+# key: gcd
+# --
+template <class T> gcd(T a, T b)
+{
+    if (a < b) swap(a, b);
+    if (a % b == 0) return b;
+    return gcd(a % b, b);
+}

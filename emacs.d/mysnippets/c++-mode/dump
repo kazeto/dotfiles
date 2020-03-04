@@ -1,0 +1,21 @@
+# -*- mode: snippet -*-
+# name: dump
+# key: dump
+# --
+#include <sstream>
+#include <string>
+template <class It> string join(It i1, It i2)
+{
+    ostringstream ss;
+    for (auto it = i1; it != i2; ++it)
+        ss << ((it == i1) ? "" : ", ") << (*it);
+    return ss.str();
+}
+
+#ifdef DEBUG
+#define Dump(x) cerr << #x << " = " << x << endl;
+#define Dumps(x) cerr << #x << " : { " << join(x.begin(), x.end()) << " }" << endl;
+#else
+#define Dump(x)
+#define Dumps(x)
+#endif
