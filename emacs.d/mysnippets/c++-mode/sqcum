@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: sqcum
+# key: sqcum
+# --
+template <class T> vector<vector<T>> square_cumulative_sum(vector<vector<T>> X)
+{
+    for (int i = 1; i < X.size(); ++i)
+        for (int j = 0; j < X.at(i); ++j)
+            X[i][j] += X[i - 1][j];
+    for (int i = 0; i < X.size(); ++i)
+        for (int j = 1; j < X.at(i); ++j)
+            X[i][j] += X[i][j - 1];
+    return X;
+}
