@@ -2,7 +2,7 @@
 # name: lcm
 # key: lcm
 # --
-template <class T> lcm(T a, T b)
+template <class T> T lcm(T a, T b)
 {
     return a / gcd(a, b) * b;
 }
