@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: print
+# key: print
+# --
+#ifdef DEBUG
+void Print() { cout << endl; }
+template <class Head, class... Args> void Print(Head &&head, Args&&... args)
+{
+    cout << head;
+    Print(args...);
+}
+#else
+#define Print(...)
+#endif

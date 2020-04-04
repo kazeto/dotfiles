@@ -23,6 +23,8 @@
     python-mode   ;;; python
     markdown-mode ;;; markdown
     yatex         ;;; yatex-mode
+	yasnippet
+	use-package
     ))
 
 ; Install packages

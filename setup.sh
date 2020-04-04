@@ -20,6 +20,7 @@ do
     ln -sf ${DIR}/${file} ${HOME}/.${file}
 done
 
+rm ${HOME}/.emacs
 echo "export DOTFILES_HOME=$DIR" > ~/.dotfiles_profile
 
 mkdir -p ~/.local/bin
