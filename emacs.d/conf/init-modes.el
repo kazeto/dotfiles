@@ -16,9 +16,10 @@
   (interactive)
   (c-set-style "stroustrup")
   (local-set-key "\C-h" 'c-electric-backspace)
-  (local-set-key "\C-c\C-d" '(lambda ()
-							   (interactive)
-							   (compile "../../run.sh")))
+  (local-set-key "\C-c\C-d"
+				 '(lambda ()
+					(interactive)
+					(compile "${DOTFILES_HOME}/atcoder/run.sh")))
   (setq indent-tabs-mode nil)
   (setq c-tab-always-indent nil)
   (setq c-auto-newline nil))
@@ -28,6 +29,7 @@
 (add-hook 'c++-mode-hook
 	  '(lambda ()
 	     (my-c-setting)
+		 (yas-minor-mode)
 	     (c-set-offset 'innamespace 0)))
 
 (add-to-list 'auto-mode-alist '("\\.cc$" . c++-mode))
