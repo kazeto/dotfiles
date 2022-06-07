@@ -18,6 +18,7 @@
 	  ("\\<\\(observe\\|query\\|fact\\|require\\)\\s-*{" 1 font-lock-constant-face)
 	  ("\\<\\(transitive\\|asymmetric\\|symmetric\\|irreflexive\\|right-unique\\|left-unique\\|closed\\|abstract\\):"
 	   (1 font-lock-constant-face))
+	  ("\\<ununified\\>" . font-lock-constant-face)
 	  (":[^ \t\n(){}]+" . font-lock-doc-face)))
   (setq font-lock-defaults
 	  '(david-font-lock-keywords t t nil nil))
