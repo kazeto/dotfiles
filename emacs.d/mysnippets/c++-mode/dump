@@ -2,8 +2,6 @@
 # name: dump
 # key: dump
 # --
-#include <sstream>
-#include <string>
 template <class It> string join(It i1, It i2)
 {
     ostringstream ss;

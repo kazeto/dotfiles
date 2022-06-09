@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: cum
+# key: cum
+# --
+template <class T> vector<T> cumulative_sum(vector<T> X)
+{
+    for (int i = 1; i < X.size(); ++i)
+        X[i] += X[i - 1];
+    return X;
+}

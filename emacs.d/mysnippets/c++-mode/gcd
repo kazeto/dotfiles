@@ -2,7 +2,7 @@
 # name: gcd
 # key: gcd
 # --
-template <class T> gcd(T a, T b)
+template <class T> T gcd(T a, T b)
 {
     if (a < b) swap(a, b);
     if (a % b == 0) return b;

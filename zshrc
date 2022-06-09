@@ -62,6 +62,8 @@ SPROMPT=$tmp_sprompt  # スペル訂正用プロンプト
 source ~/.dotfiles_profile
 source $DOTFILES_HOME/scripts/rc.sh
 
+# -------- Solarized --------
+
 if is_cygwin; then
     source $DOTFILES_HOME/mods/mintty-colors-solarized/sol.dark
 fi
